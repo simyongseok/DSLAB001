@@ -18,6 +18,7 @@
    useColorScheme,
    View,
    TouchableOpacity,
+   TextInput,
  } from 'react-native';
  import {
    Colors,
@@ -63,6 +64,14 @@ function TabSettingQnA({navigation}) {
         TabCovidMainMetro Screen
       </Text>
       </ScrollView>
+
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+       <Text>Vaccine Policy Screen!</Text>
+       <TextInput
+        placeholder={"Column1"}
+        placeholderTextColor={"red"}
+       />
+     </View>
     </View>
   );
 }

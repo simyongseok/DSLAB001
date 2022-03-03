@@ -30,8 +30,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Component } from 'react/cjs/react.production.min';
 //Tab Navigate
-import TabCovidMain from './TabCovidMain';
-import TabSettingMain from './TabSettingMain';
+import TabCovidMain from './src/Components/TabCovidMain';
+import TabSettingMain from './src/Components/TabSettingMain';
 import { TextInput } from 'react-native-gesture-handler';
 
 //DB connection
@@ -52,13 +52,6 @@ function TabVaccine() {
 const Tab = createBottomTabNavigator();
 
 class App extends Component{
-
-  handleChange =(e)=>{
-    this.setState({
-      [e.target.name] : e.target.value,
-    });
-  }
-
   render(){
     return (
       <NavigationContainer>
